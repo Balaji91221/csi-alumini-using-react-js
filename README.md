@@ -1,76 +1,54 @@
+# CSI Alumni · React Directory Prototype
 
-once go to link 
-https://balaji91221.github.io/csi-alumini/
-# Getting Started with Create React App
+**A frontend exploration of an alumni and mentor directory.**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React · CSS · Create React App
 
-## Available Scripts
+[Original demo link](https://balaji91221.github.io/csi-alumini/)
 
-In the project directory, you can run:
+## Purpose
 
-### `npm start`
+An alumni directory needs to make people, groups, and profile links easy to scan. This project explores that presentation through a page of member cards and navigation for years and cohorts.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-![image](https://user-images.githubusercontent.com/101827986/190531548-0f84894d-9716-4bda-a3d8-075a0a2dae85.png)
-![image](https://user-images.githubusercontent.com/101827986/190531559-a6d97988-fcee-4548-854e-91b8ec8b4ee4.png)
-it will like
+## Preview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Alumni directory preview](https://user-images.githubusercontent.com/101827986/190531548-0f84894d-9716-4bda-a3d8-075a0a2dae85.png)
+![Member-card preview](https://user-images.githubusercontent.com/101827986/190531559-a6d97988-fcee-4548-854e-91b8ec8b4ee4.png)
 
-### `npm test`
+## Included interface
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- An alumni-directory heading and navigation layout.
+- Year and cohort category links.
+- Static member cards with names, role text, images, and profile links.
+- Shared styling for the page and card grid.
 
-### `npm run build`
+## Run locally
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Open the source directory with Node.js/npm installed:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Open [localhost:3000](http://localhost:3000). Use `npm run build` to create a static frontend bundle.
 
-### `npm run eject`
+## Component structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```text
+src/index.js → App → Member → directory layout and static cards
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+| File | Responsibility |
+|---|---|
+| [`src/App.js`](src/App.js) | Root application component |
+| [`src/components/Member.jsx`](src/components/Member.jsx) | Directory markup and sample profile content |
+| [`src/components/style.css`](src/components/style.css) | Directory presentation |
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Current scope
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The categories are navigation links, not implemented data filters. Several linked routes and a referenced navbar image are not included in this repository. Member content is embedded in the component; no directory API, sign-in, or profile-management backend is provided.
 
-## Learn More
+The source includes third-party hosted profile assets and sample links. Preserve their attribution and replace sample content with authorized alumni information when adapting the layout. The original demo URL and screenshots are retained as project references.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
